@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import AdminLayout from './layouts/AdminLayout';
 import PrivateRoute from './components/PrivateRoute';
@@ -21,7 +21,7 @@ import ImageItems from './pages/admin/ImageItems';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         {/* ── Public routes ── */}
         <Route path="/" element={<MainLayout />}>
@@ -50,6 +50,6 @@ export default function App() {
         {/* ── Fallback ── */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
