@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://RuslanBozorov.github.io/ulube",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "homepage": "https://RuslanBozorov.github.io/ulube",
+    
     "predeploy": "vite build",
 "deploy": "gh-pages -d dist"
   },
